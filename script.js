@@ -1,6 +1,5 @@
 //loop that create 256 squares
 
-
 function SquaresNumberPromp() {
   var Prompt = prompt("Please enter grid size that you want:");
   if (Prompt === null) {
@@ -11,18 +10,26 @@ function SquaresNumberPromp() {
 
 
   } else {
-    alert(Prompt)
+    for (let i = 0; i < Prompt * Prompt; i++) {
+      const container = document.querySelector(".container");
+    
+      const div = document.createElement("div");
+      container.appendChild(div);
+      div.classList.add("square");
+    }
+    console.log(Prompt)
   }
 
 }
 
+const list = document.querySelectorAll('.square');
 
 
 
-for (let i = 0; i < 256; i++) {
-  const container = document.querySelector(".container");
-
-  const div = document.createElement("div");
-  container.appendChild(div);
-  div.classList.add("square");
-}
+list.forEach(el => {
+  el.addEventListener('click', (e) => {
+      //code that affects the element you click on
+      el.style.backgroundColor = "#a52a2a"
+     
+  });
+}); 

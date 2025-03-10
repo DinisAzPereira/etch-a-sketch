@@ -20,15 +20,13 @@ h1 {
 
     width: 320px;
     height: 320px;
-    flex-grow: 1;
     background-color: white;
 
 }
 
 .square {   
-
-    width: 6.25%;
-    height: 6.25%;
+    flex-grow: 1;
+   flex-basis: auto;
     background-color: #000;
 
 
