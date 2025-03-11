@@ -18,12 +18,14 @@ h1 {
 
 .etchAsketch {
     display: flex;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     align-items: center;
     justify-content: center;
         margin: 20px;
     max-width: 1180px;
     width: 100%;
+    font-weight: bold;
+    color: white;
     
 }
 
