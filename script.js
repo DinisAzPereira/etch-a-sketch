@@ -17,19 +17,23 @@ function SquaresNumberPromp() {
       container.appendChild(div);
       div.classList.add("square");
     }
-    console.log(Prompt)
+      changeSquareBackground()
   }
 
 }
 
-const list = document.querySelectorAll('.square');
+
+function changeSquareBackground() {
+
+  const list = document.querySelectorAll('.square');
 
 
 
-list.forEach(el => {
-  el.addEventListener('click', (e) => {
-      //code that affects the element you click on
-      el.style.backgroundColor = "#a52a2a"
-     
-  });
-}); 
+  list.forEach(el => {
+    el.addEventListener('click', (e) => {
+        //code that affects the element you click on
+        el.style.backgroundColor = "#a52a2a"
+       
+    });
+  }); 
+}
